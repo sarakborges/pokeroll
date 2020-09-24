@@ -1,0 +1,35 @@
+@import "src/shared/style.scss";
+
+.faq-title {
+  padding-top: 30px;
+
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.faq-list {
+  max-width: 600px;
+
+  .faq-item {
+    padding: 45px 0;
+
+    &:not(:last-of-type) {
+      border-bottom: 4px dotted rgba($dark, 0.3);
+    }
+
+    .item-title {
+      padding-bottom: 30px;
+
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .item-text {
+      p {
+        padding-top: 15px;
+
+        line-height: 160%;
+      }
+    }
+  }
+}

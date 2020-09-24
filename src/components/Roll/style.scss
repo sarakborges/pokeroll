@@ -1,0 +1,27 @@
+@import 'src/shared/style.scss';
+
+.roll_item {
+  color: $dark;
+
+  &:not(:first-of-type) {
+    padding-top: 34px;
+    margin-top: 30px;
+
+    border-top: 4px dotted rgba($dark, 0.3);
+  }
+
+  .roll_title {
+    font-size: 20px;
+    font-weight: 300;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .pokemons_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

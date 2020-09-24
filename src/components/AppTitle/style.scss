@@ -1,0 +1,40 @@
+@import "src/shared/style.scss";
+
+#app-topbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  padding: 30px 0;
+
+  background: $maincolor;
+
+  #app-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: $light;
+  }
+
+  #app-menu {
+    .menu {
+      display: flex;
+
+      padding-top: 10px;
+
+      .menu-item {
+        &:not(:last-of-type) {
+          margin-right: 30px;
+        }
+
+        .menu-link {
+          border-bottom: 1px solid $white;
+
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "src/shared/style.scss";
+
+.place-wrapper {
+  padding-bottom: 30px;
+
+  .place-name {
+    padding-top: 30px;
+
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .place-pokemons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .pokemon-item {
+      width: calc(100% / 6 - 10px);
+      padding-top: 12px;
+
+      &:not(:nth-child(6n)) {
+        margin-right: 12px;
+      }
+
+      &.pokemon-uncommon {
+        .pokemon_info {
+          border-color: $typegrass;
+        }
+      }
+      &.pokemon-rare {
+        .pokemon_info {
+          border-color: $typewater;
+        }
+      }
+      &.pokemon-ultrarare {
+        .pokemon_info {
+          border-color: $typefire;
+        }
+      }
+
+      .pokemon_info {
+        padding: 15px;
+
+        background: rgba($dark, 0.1);
+        border: 1px solid rgba($dark, 0.1);
+
+        .pokemon_sprite {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          width: 100%;
+          height: 42px;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .pokemon_name {
+          text-align: center;
+          font-weight: 300;
+        }
+
+        .pokemon_abilities {
+          height: 73px;
+          padding-top: 5px;
+
+          text-align: left;
+          font-weight: 300;
+          font-size: 12px;
+
+          dd {
+            font-size: 11px;
+
+            &:before {
+              content: "- ";
+            }
+
+            &:not(:first-of-type) {
+              &:last-of-type {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        .pokemon_types {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

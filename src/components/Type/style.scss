@@ -1,0 +1,72 @@
+@import "src/shared/style.scss";
+
+.type {
+  padding: 0 5px;
+  margin: 0 3px;
+
+  border: 1px solid rgba($light, 0.6);
+
+  text-transform: uppercase;
+  line-height: 19px;
+  font-size: 12px;
+  text-shadow: 1px 1px 5px rgba($dark, 0.5), -1px -1px 5px rgba($dark, 0.5);
+  color: $light;
+
+  &.normal {
+    background: $typenormal;
+  }
+  &.fighting {
+    background: $typefighting;
+  }
+  &.flying {
+    background: $typeflying;
+  }
+  &.poison {
+    background: $typepoison;
+  }
+  &.ground {
+    background: $typeground;
+  }
+  &.rock {
+    background: $typerock;
+  }
+  &.bug {
+    background: $typebug;
+  }
+  &.ghost {
+    background: $typeghost;
+  }
+  &.steel {
+    background: $typesteel;
+  }
+  &.fire {
+    background: $typefire;
+  }
+  &.water {
+    background: $typewater;
+  }
+  &.grass {
+    background: $typegrass;
+  }
+  &.electric {
+    background: $typeelectric;
+  }
+  &.psychic {
+    background: $typepsychic;
+  }
+  &.ice {
+    background: $typeice;
+  }
+  &.dragon {
+    background: $typedragon;
+  }
+  &.dark {
+    background: $typedark;
+  }
+  &.fairy {
+    background: $typefairy;
+  }
+  &.unknown {
+    background: $typeunknown;
+  }
+}
